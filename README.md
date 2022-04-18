@@ -2,10 +2,10 @@
 This Repository have all the required terraform code to deploy the Mediawiki application on Azure cloud.
 
 #### Pre-requisites to use this github code :
-1.Azure Account with an active subscription
-2.Service principal account with contributor access on the subscription
-3.Terraform installed machine or Azure Devops active project
-4.Azure storage account and container to store the terraform state file
+1.Azure Account with an active subscription.
+2.Service principal account with contributor access on the subscription.
+3.Terraform installed machine or Azure Devops active project.
+4.Azure storage account and container to store the terraform state file.
 
 #### Steps to execute this project
 All you need to have a local machine with terraform installed and download the code locally.
