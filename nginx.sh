@@ -6,6 +6,7 @@ sudo apt-get install nginx
 sudo systemctl start nginx.service
 sudo systemctl enable nginx.service
 echo "Ngnix wen server is installed and running"
+sleep 2m 
 
 # MariaDB Installtion
 sudo apt-get update
@@ -15,6 +16,7 @@ sudo systemctl enable mariadb
 sudo mysql_secure_installation
 sudo systemctl restart mariadb.service
 echo "Maria DB is installed and running"
+sleep 2m 
 
 # PHP Installtion
 sudo add-apt-repository ppa:ondrej/php
