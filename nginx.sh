@@ -5,7 +5,7 @@ sudo apt-get upgrade
 sudo apt-get install nginx
 sudo systemctl start nginx.service
 sudo systemctl enable nginx.service
-echo "Ngnix wen server is installed and running"
+echo "Ngnix web server is installed and running"
 sleep 2m 
 
 # MariaDB Installtion
