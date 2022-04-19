@@ -96,7 +96,7 @@ resource "null_resource" "remote_install_1" {
 
     provisioner "remote-exec" {
         inline = [
-            "/bin/bash /tmp/MariaDB.sh"
+            "/bin/bash /tmp/MariaDB.sh dbadmin dbpassword"
         ]
     }
 }
