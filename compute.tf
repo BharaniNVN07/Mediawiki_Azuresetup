@@ -96,6 +96,7 @@ resource "null_resource" "remote_install_1" {
 
     provisioner "remote-exec" {
         inline = [
+            "chmod +x /tmp/MariaDB.sh",
             "/bin/bash /tmp/MariaDB.sh dbadmin dbpassword"
         ]
     }
@@ -118,6 +119,7 @@ resource "null_resource" "remote_install_2" {
 
     provisioner "remote-exec" {
         inline = [
+            "chmod +x /tmp/Mediawiki.sh",
             "/bin/bash /tmp/Mediawiki.sh"
         ]
     }
