@@ -36,7 +36,7 @@ resource "azurerm_network_security_group" "nsg" {
     source_port_range          = "*"
     destination_port_range     = "80"
     source_address_prefix      = "Internet"
-    destination_address_prefix = "*"
+    destination_address_prefix = "VirtualNetwork"
   }
   security_rule {
     name                       = "AllowSSH"
@@ -48,7 +48,7 @@ resource "azurerm_network_security_group" "nsg" {
     source_port_range          = "*"
     destination_port_range     = "22"
     source_address_prefix      = "Internet"
-    destination_address_prefix = "*"
+    destination_address_prefix = "VirtualNetwork"
   }
 }
 
